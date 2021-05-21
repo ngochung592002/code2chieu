@@ -18,31 +18,31 @@ char* bachuso(unsigned int n)
     tram = n / 10;
     if (tram > 0)
     {
-        strcat_s(s, kyso[tram]);
-        strcat_s(s, " tram ");
+        strcat(s, kyso[tram]);
+        strcat(s, " tram ");
     }
     if (chuc > 0)
     {
         if (chuc == 1)
-            strcat_s(s, "muoi ");
+            strcat(s, "muoi ");
         else
         {
-            strcat_s(s, kyso[chuc]);
-            strcat_s(s, " muoi ");
+            strcat(s, kyso[chuc]);
+            strcat(s, " muoi ");
         }
     }
     if (donvi > 0)
     {
         if (chuc == 0 && tram != 0)
-            strcat_s(s, " le ");
+            strcat(s, " le ");
         if (donvi == 1)
-            strcat_s(s, " mot ");
+            strcat(s, " mot ");
         else if (donvi == 5 && (chuc != 0 || tram != 0))
-            strcat_s(s, " lam ");
+            strcat(s, " lam ");
         else if (donvi == 5 && (chuc = 0 || tram != 0))
-            strcat_s(s, " nam ");
+            strcat(s, " nam ");
         else
-            strcat_s(s, kyso[donvi]);
+            strcat(s, kyso[donvi]);
     }
     return s;
 }
