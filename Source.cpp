@@ -34,13 +34,13 @@ char* bachuso(unsigned int n)
     if (donvi > 0)
     {
         if (chuc == 0 && tram != 0)
-            strcat_s(s, "le ");
+            strcat_s(s, " le ");
         if (donvi == 1)
-            strcat_s(s, "mot");
+            strcat_s(s, " mot ");
         else if (donvi == 5 && (chuc != 0 || tram != 0))
-            strcat_s(s, "lam");
+            strcat_s(s, " lam ");
         else if (donvi == 5 && (chuc = 0 || tram != 0))
-            strcat_s(s, "nam");
+            strcat_s(s, " nam ");
         else
             strcat_s(s, kyso[donvi]);
     }
@@ -69,13 +69,13 @@ int main()
         ty = n / 1000;
         chuoi[0] = 0;
         if (ty > 0)
-            cout << "ty" << bachuso(ty);
+            cout << bachuso(ty)<<" ty " ;
         if (trieu > 0)
-            cout <<  "trieu" << bachuso(trieu);
+            cout << bachuso(trieu)<< " trieu "  ;
         if (ngan > 0)
-            cout << "nghan" << bachuso(ngan);
+            cout << bachuso(ngan)<<" nghan ";
         if (donvi > 0)
-            cout << "" << bachuso(donvi);
+            cout << " " << bachuso(donvi);
     }
     return 0;
 }
