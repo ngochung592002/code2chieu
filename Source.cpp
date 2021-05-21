@@ -5,6 +5,7 @@
 #include<iomanip>
 #include<cstdlib>
 #include<ctime>
+void ChayChuongTrinh();
 using namespace std;
 int main()
 {
